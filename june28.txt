@@ -1,0 +1,212 @@
+1.using System;
+
+namespace june28
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        
+            int[] arr = new int[] { 2, 8, 5 };
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum=sum+arr[i];
+            }
+            Console.WriteLine(sum);
+            
+        }
+    }
+}
+-------------------------------------
+2.using System;
+
+namespace june28
+{
+    class Program
+    {
+                  static  int count=0;
+        static void Main(string[] args)
+        {
+            int[] arr={1,2,3,4,1,2};
+            for(int i=0;i<=arr.Length-1;i++)
+            {
+                for(int j=i+1;j<=arr.Length-1;j++)
+                {
+                    if(arr[i]==arr[j])
+                    {
+                        count++;
+                        break;
+                    }
+                }
+
+            } 
+            Console.WriteLine(count);
+        }
+    }
+}
+---------------------------------------
+4.using System;
+
+namespace june28assignment
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = new int[] { 3,9,7,2,4,6,8 };
+        int[] arr2 =new int[arr.Length];
+        int[] arr3 =new int[arr.Length];
+        int b=0,c=0;
+    
+        for(int i=0;i<=arr.Length-1;i++)
+        {
+            if(arr[i]%2==0){
+                
+                arr2[b]=arr[i];
+                b++;
+                
+            }
+            else{
+                arr3[c]=arr[i];
+            c++;
+                
+            }
+        }
+    Console.WriteLine("Even numbers =");
+    for(int i=0;i<b;i++){
+        Console.WriteLine(arr2[i]);
+    }
+    Console.WriteLine("Odd numbers=");
+    for(int i=0;i<c;i++){
+        Console.WriteLine(arr3[i]);
+    }
+        }
+    }
+}
+------------------------------------
+6.namespace assignmentc
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int status =0;
+            int[] a = {1,2,3,4,5,6,7,10 };
+            for(int i=1;i<=10;i++){
+                for(int j=0;j<=a.Length-1;j++)
+                {
+                    if(i==a[j]){
+                        status=1;
+                        break;
+                    }
+               
+                else{
+                    status=0;
+                }
+                }
+            if(status==0){
+                Console.WriteLine(i);
+            }
+            }
+   
+    }
+    }
+}
+------------------------------
+8)using System;
+
+namespace june28assignment
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             int[] arr1={2,3,5};
+    int[] arr2=new int[arr1.Length];
+    int j=0;
+    for(int i=arr1.Length-1;i>= 0;i--)
+    {
+     arr2[j] = arr1[i];
+     j++;
+    }
+    Console.WriteLine("array is");
+    for(int i=0;i<j;i++){
+        Console.WriteLine(arr2[i]);
+    }
+    }
+}
+   }
+---------------------------
+7.
+using System;
+
+namespace june28assignment
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+ 
+            int[] arr1=new int[]{2,3,8,13,5,4};
+            int temp;
+   
+         for(int i=0;i<arr1.Length-1;i++)
+         {
+            for(int j=i+1;j<arr1.Length;j++)
+            {
+              if (arr1[i] > arr1[j])
+              {
+ 
+                temp = arr1[i];
+                arr1[i] = arr1[j];
+                arr1[j] = temp;
+               }
+            }
+        }
+         foreach(int items in arr1)
+        {
+            Console.Write(items + " ");
+        }
+        Console.WriteLine("biggest number");
+        Console.WriteLine(arr1[arr1.Length-1]);
+        Console.WriteLine("smallest no is");
+        Console.WriteLine(arr1[0]);
+  }
+}   
+}
+----------------------------------------------------
+9)
+using System;
+
+namespace june28assignment
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+ 
+            int[] arr1=new int[]{2,3,8,13,5,4};
+            int temp;
+   
+         for(int i=0;i<arr1.Length-1;i++)
+         {
+            for(int j=i+1;j<arr1.Length;j++)
+            {
+              if (arr1[i] > arr1[j])
+              {
+ 
+                temp = arr1[i];
+                arr1[i] = arr1[j];
+                arr1[j] = temp;
+               }
+            }
+        }
+         foreach(int items in arr1)
+        {
+            Console.Write(items + " ");
+        }
+        }
+}   
+}
+-----------------------------------------------
