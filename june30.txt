@@ -1,0 +1,297 @@
+2.
+using System;
+ 
+namespace assignmentC
+ 
+{​​​​​​​​
+
+class program {​​​​​​​​
+
+static public void Main()
+    {​​​​​​​​
+String name1,name2;
+char temp;
+ 
+Console.WriteLine("Please enter names");
+name1=Console.ReadLine();
+name2=Console.ReadLine();
+ 
+name1.ToLower();
+name2.ToLower();
+ 
+
+ 
+char[] name=name1.ToCharArray();
+char[] fname=name2.ToCharArray();
+ 
+for(int i=0;i<=name.Length-1;i++){​​​​​​​​
+for(int j=i+1;j<=name.Length-1;j++){​​​​​​​​
+if(name[i]>name[j])
+              {​​​​​​​​
+temp=name[i];
+name[i]=name[j];
+name[j]=temp;
+ 
+              }​​​​​​​​
+        }​​​​​​​​
+      }​​​​​​​​
+Console.WriteLine(name);
+ 
+for(int i=0;i<fname.Length;i++){​​​​​​​​
+for(int j=i+1;j<fname.Length;j++){​​​​​​​​
+if(fname[i]>fname[j]){​​​​​​​​
+temp=fname[i];
+fname[i]=fname[j];
+fname[j]=temp;
+              }​​​​​​​​
+          }​​​​​​​​
+      }​​​​​​​​
+Console.WriteLine(fname);
+
+ 
+
+    }​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+ 
+
+___________________________________________________________________    
+4.
+using System;
+ 
+namespace assignmentC
+ 
+{​​​​​​​​
+
+class program {​​​​​​​​
+
+static public void Main()
+    {​​​​​​​​
+String name;
+int count=0;
+Console.WriteLine("Enter a String");
+name=Console.ReadLine();
+
+foreach(char characters in name){​​​​​​​​
+count=count+1;
+      }​​​​​​​​
+Console.WriteLine("Count of the above string is"+count);
+
+    }​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+ 
+_____________________________________________________________
+5.
+using System;
+ 
+namespace assignmentC
+ 
+{​​​​​​​​
+
+class program {​​​​​​​​
+
+static public void Main()
+    {​​​​​​​​
+String name;
+
+Console.WriteLine("Enter a String");
+name=Console.ReadLine();
+ 
+String[] arr= name.Split(" ");
+
+
+
+Console.WriteLine("The number of word in the string are = "+arr.Length);
+
+    }​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+____________________________________________________________
+7.
+using System;
+ 
+namespace assignmentC
+ 
+{​​​​​​​​
+
+class program {​​​​​​​​
+static char[] a;
+static public void Main()
+    {​​​​​​​​
+String name;
+
+Console.WriteLine("Enter a String");
+name=Console.ReadLine();
+String[] arr= name.Split(" ");
+ 
+for(inti=0;i<arr.Length;i++){​​​​​​​​
+a=arr[i].ToCharArray(); //a=p r a v e e n
+charb= Char.ToUpper(a[0]);//b=P
+ 
+StringC= arr[i].Substring(1); //raveen
+Console.Write(b+C);//Praveen
+Console.Write(" "); 
+      }​​​​​​​​
+
+
+
+    }​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+ 
+________________________________________________________________    
+6.
+using System;
+
+namespace assignmentC
+
+{​​​​​​​​
+
+class program {​​​​​​​​
+
+static public void Main()
+    {​​​​​​​​
+String name;
+
+Console.WriteLine("Enter a String");
+name=Console.ReadLine();
+
+String[] arr= name.Split(" ");
+Stringinput=Console.ReadLine();
+ 
+for(int i =0; i<arr.Length;i++)
+      {​​​​​​​​
+if(input==arr[i]){​​​​​​​​
+Console.WriteLine("The position of " +" "+arr[i]+" "+(i+1));
+         }​​​​​​​​ 
+      }​​​​​​​​
+
+    }​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+
+____________________________________________________________
+8.
+using System;
+
+namespace assignmentC
+
+{​​​​​​​​
+
+class program {​​​​​​​​
+
+static public void Main()
+    {​​​​​​​​
+String name;
+
+Console.WriteLine("Enter a String");
+name=Console.ReadLine();
+char[] car=name.ToCharArray();
+ 
+
+for(int i=0;i<car.Length;i++)
+        {​​​​​​​​
+if(car[i]==' ')
+            {​​​​​​​​
+Console.WriteLine(" ");
+            }​​​​​​​​
+elseif(i%2==0){​​​​​​​​
+car[i]=char.ToUpper(car[i]);
+            }​​​​​​​​
+else{​​​​​​​​
+car[i]=char.ToLower(car[i]);           
+                 }​​​​​​​​
+
+        }​​​​​​​​
+Console.WriteLine(car);
+
+
+    }​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+
+________________________________________________________
+8.
+using System;
+
+namespace assignmentC
+
+{​​​​​​​​
+
+class program {​​​​​​​​
+
+static public void Main()
+    {​​​​​​​​
+String name;
+
+Console.WriteLine("Enter a String");
+name=Console.ReadLine();
+char[] car=name.ToCharArray();
+ 
+
+for(inti=0;i<car.Length;i++)
+        {​​​​​​​​
+if(car[i]==' ')
+            {​​​​​​​​
+Console.WriteLine(" ");
+            }​​​​​​​​
+elseif(car[i]==','){​​​​​​​​
+Console.WriteLine(",");
+            }​​​​​​​​
+elseif(car[i]=='#'){​​​​​​​​
+Console.WriteLine("#");
+            }​​​​​​​​
+elseif(i%2==0){​​​​​​​​
+car[i]=char.ToUpper(car[i]);
+            }​​​​​​​​
+else{​​​​​​​​
+car[i]=char.ToLower(car[i]);           
+                 }​​​​​​​​
+
+        }​​​​​​​​
+Console.WriteLine(car);
+
+
+    }​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+
+___________________________________________________________
+9.
+using System;
+
+namespace assignmentC
+
+{​​​​​​​​
+
+class program {​​​​​​​​
+
+static public void Main()
+    {​​​​​​​​
+String name;
+
+Console.WriteLine("Enter a String");
+name=Console.ReadLine();
+String[] str=name.Split(" ");
+ 
+for(int i=0;i<str.Length;i++){​​​​​​​​
+if(str[i].Length%2==0){​​​​​​​​
+char[] car=str[i].ToCharArray();
+
+Array.Reverse(car);
+Console.Write(newstring(car));
+Console.Write(" ");
+      }​​​​​​​​
+else{​​​​​​​​
+Console.Write(str[i]);
+Console.Write(" ");
+      }​​​​​​​​
+ 
+    }​​​​​​​​
+
+
+    }​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+
