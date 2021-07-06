@@ -1,0 +1,121 @@
+4.using System;
+namespace program
+{​​​​​​​​
+class Program
+ {​​​​​​​​
+static void Main(string[] args)
+ {​​​​​​​​
+person trump=new person();
+trump.greet(); //hello
+student varun=new student();
+varun.greet();//hello
+varun.setAge(23);//set age
+varun.showAge(18);//show age
+professor te=new professor();
+te.setAge(34);
+te.greet();
+te.explain();
+
+//Console.WriteLine(age);
+
+
+ }​​​​​​​​
+ }​​​​​​​​
+class person
+ {​​​​​​​​
+public void greet()
+ {​​​​​​​​
+Console.WriteLine("hello");
+ }​​​​​​​​
+public int setAge(int age)
+ {​​​​​​​​
+//int age=int.Parse(Console.ReadLine());
+Console.WriteLine(age);
+return age;
+ }​​​​​​​​
+
+ }​​​​​​​​
+class student:person
+ {​​​​​​​​
+public void study()
+ {​​​​​​​​
+Console.WriteLine("i am Studying");
+ }​​​​​​​​
+public void showAge( int age)
+ {​​​​​​​​
+person ss=new person();
+
+Console.WriteLine("My age is years old "+age);
+
+ }​​​​​​​​
+ }​​​​​​​​
+class professor:person
+ {​​​​​​​​
+public void explain()
+ {​​​​​​​​
+Console.WriteLine("i am explaining on the screen");
+ }​​​​​​​​
+ }​​​​​​​​
+ }​​​​​​​​
+    
+-----------------------------------------------------
+8.using System;
+
+namespace assignmentC
+
+{​​​​​​​​
+
+class program {​​​​​​​​
+
+static public void Main()
+{​​​​​​​​
+Random rd = new Random();
+Console.WriteLine("Random number between 0 t0 20"+rd.Next()/100000000);
+}​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+
+--------------------------------------------------
+    
+
+7.using System;
+
+namespace assignmentC
+
+{​​​​​​​​
+
+class program {​​​​​​​​
+
+static public void Main()
+{​​​​​​​​
+DateTime d1= new DateTime(2021,07,07,4,4,4);
+Console.WriteLine(d1);
+DateTime d2= new DateTime(2021,07,07,4,4,4);
+Console.WriteLine(d2);
+if(d1==d2)
+{​​​​​​​​
+Console.WriteLine("True");
+}​​​​​​​​
+else
+{​​​​​​​​
+Console.WriteLine("False");
+}​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+}​​​​​​​​
+
+--------------------------------------
+6.using System;
+class Program
+{​​​​​​​​
+static void Main()
+ {​​​​​​​​
+Console.WriteLine("Enter Year : "); 
+int Year = int.Parse(Console.ReadLine()); 
+if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0)) Console.WriteLine("{​​​​​​​​0}​​​​​​​​ is a Leap Year.", Year); 
+else Console.WriteLine("{​​​​​​​​0}​​​​​​​​ is not a Leap Year.", Year); 
+
+
+ }​​​​​​​​
+}​​​​​​​​
+
